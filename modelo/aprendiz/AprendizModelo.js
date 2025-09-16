@@ -1,7 +1,7 @@
 const dbService = require('../bd/Conexion');
 const bcrypt = require('bcrypt');
 
-class ClienteModelo {
+class AprendizModelo {
   // funcion para crear nuevos clientes
   static async crearClientes(doc, name, tel, email, contras) {
     const query = 'INSERT INTO usuarios (documento, nombres, telefono, correo, contrasena, fechaCreacion) VALUES (?, ?, ?, ?, ?, ?)';
@@ -20,4 +20,4 @@ class ClienteModelo {
   
 }
 
-module.exports = ClienteModelo;
+module.exports = AprendizModelo;

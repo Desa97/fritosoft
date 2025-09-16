@@ -1,8 +1,8 @@
-const modelo = require('../../modelo/cliente/ClienteModelo');
+const modelo = require('../../modelo/aprendiz/AprendizModelo');
 
-class ClienteControlador {
+class AprendizControlador {
     // funcion crear nuevo cliente
-    static async crearCliente(req, res) {
+    static async crearAprendiz(req, res) {
         const { t1: doc, t2: name, t3: tel, t4: email, t5: contra } = req.body;
         // ------------👁️‍🗨️ validaciones👁️‍🗨️----------------
         // Validar campos vacíos❓❓❓❓❓----------------
